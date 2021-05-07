@@ -1,16 +1,18 @@
 const mainRoutes = {
     main: "/",
+    sales: "/sales",
+    analytics: "/analytics",
+    list: "/list/:id?",
+    profile: "/profile"
   };
   
   const authRoutes = {
-    signup: "/signUp",
+    signup: "/sign",
   };
   
   export const routes = { ...mainRoutes, ...authRoutes };
 
   export const links = {
     main: "/",
-    exchangeCard: (offer: string) => `/userChange/offer/${offer}`,
-    activeCard: (id: string) => `/userChange/active/${id}`,
-    archiveCard: (id: string) => `/userChange/archive/${id}`,
+    list: (id: string) => `/list/${id}`,
   };
