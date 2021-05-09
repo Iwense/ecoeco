@@ -2,7 +2,8 @@ const mainRoutes = {
     main: "/",
     sales: "/sales",
     analytics: "/analytics",
-    list: "/list/:id?",
+    list: "/list",
+    invoice: "/invoice/:id",
     profile: "/profile"
   };
   
@@ -14,5 +15,5 @@ const mainRoutes = {
 
   export const links = {
     main: "/",
-    list: (id: string) => `/list/${id}`,
+    invoice: (id: string) => `/invoice/${id}`,
   };

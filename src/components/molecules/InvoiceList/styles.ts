@@ -5,4 +5,8 @@ export const useStyles = makeStyles({
   root: {
     
   },
+  title:{
+    fontSize: 18,
+    fontWeight: 700,
+  },
 }, {index: 2});
