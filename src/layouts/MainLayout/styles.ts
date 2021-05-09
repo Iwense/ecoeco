@@ -11,7 +11,8 @@ export const useStyles = makeStyles(() => ({
     },
     content: {
         minHeight: 'calc(100vh - 60px)',
-        padding: '24px',
+        background: Colors.red,
+        paddingTop: 60,
     },
     footer: {
         position: 'fixed',

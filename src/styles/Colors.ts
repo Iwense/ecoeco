@@ -4,4 +4,5 @@ export const Colors: {[index: string]: string } = {
     black: '##000000',
     gray: '#878787',
     liteGray: '#EBEBEB',
+    yellow: '#F8D856',
 };
