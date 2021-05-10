@@ -6,7 +6,8 @@ export const useStyles = makeStyles({
    display: 'grid',
    gridTemplateColumns: '1fr 1fr 1fr 1fr 1fr',
    width: '100%',
-   height: '100%'
+   height: '100%',
+   alignItems: 'start',
   },
   item:{
     display: "flex",
@@ -27,6 +28,7 @@ export const useStyles = makeStyles({
     color: Colors.gray,
     fontWeight: 500,
     textAlign: 'center',
+    lineHeight: 0.9,
   },
   icon:{
     fill: Colors.gray,

@@ -4,7 +4,7 @@ import { Box, Typography } from "@material-ui/core";
 import { NavLink, useHistory, useLocation } from "react-router-dom";
 import { SvgIcon } from '@material-ui/core';
 import {ReactComponent as Home} from '../../../assets/svg/home.svg'
-import {ReactComponent as Sales} from '../../../assets/svg/sales.svg'
+import {ReactComponent as Cart} from '../../../assets/svg/cart.svg'
 import {ReactComponent as Analytics} from '../../../assets/svg/analytics.svg'
 import {ReactComponent as List} from '../../../assets/svg/list.svg'
 import {ReactComponent as Profile} from '../../../assets/svg/user.svg'
@@ -13,7 +13,7 @@ import cn from "classnames";
 
 const data = [
   {id: 1, link: '/', title: "Главная", icon: Home},
-  {id: 2, link: '/sales', title: "Скидки", icon: Sales},
+  {id: 2, link: '/sales', title: "Список покупок", icon: Cart},
   {id: 3, link: '/analytics', title: "Аналитика", icon: Analytics},
   {id: 4, link: '/list', title: "Чеки", icon: List},
   {id: 5, link: '/profile', title: "Профиль", icon: Profile},
