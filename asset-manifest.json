@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/ecoeco/static/css/main.340c3822.chunk.css",
-    "main.js": "/ecoeco/static/js/main.f592abc5.chunk.js",
-    "main.js.map": "/ecoeco/static/js/main.f592abc5.chunk.js.map",
+    "main.js": "/ecoeco/static/js/main.f67c4b37.chunk.js",
+    "main.js.map": "/ecoeco/static/js/main.f67c4b37.chunk.js.map",
     "runtime-main.js": "/ecoeco/static/js/runtime-main.50dd6f09.js",
     "runtime-main.js.map": "/ecoeco/static/js/runtime-main.50dd6f09.js.map",
     "static/css/2.4a229505.chunk.css": "/ecoeco/static/css/2.4a229505.chunk.css",
@@ -13,11 +13,11 @@
     "static/css/main.340c3822.chunk.css.map": "/ecoeco/static/css/main.340c3822.chunk.css.map",
     "static/js/2.79c147a9.chunk.js.LICENSE.txt": "/ecoeco/static/js/2.79c147a9.chunk.js.LICENSE.txt",
     "static/media/analytics.0140b2b6.svg": "/ecoeco/static/media/analytics.0140b2b6.svg",
+    "static/media/cart.8a9a12a0.svg": "/ecoeco/static/media/cart.8a9a12a0.svg",
     "static/media/home.bbdc8b68.svg": "/ecoeco/static/media/home.bbdc8b68.svg",
     "static/media/invoice.89b0a4e1.svg": "/ecoeco/static/media/invoice.89b0a4e1.svg",
     "static/media/list.93d98724.svg": "/ecoeco/static/media/list.93d98724.svg",
     "static/media/index.css": "/ecoeco/static/media/roboto-vietnamese-400-normal.c0bec65d.woff2",
-    "static/media/sales.4c94c5aa.svg": "/ecoeco/static/media/sales.4c94c5aa.svg",
     "static/media/user.7985169e.svg": "/ecoeco/static/media/user.7985169e.svg"
   },
   "entrypoints": [
@@ -25,6 +25,6 @@
     "static/css/2.4a229505.chunk.css",
     "static/js/2.79c147a9.chunk.js",
     "static/css/main.340c3822.chunk.css",
-    "static/js/main.f592abc5.chunk.js"
+    "static/js/main.f67c4b37.chunk.js"
   ]
 }
