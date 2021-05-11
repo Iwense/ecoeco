@@ -5,4 +5,7 @@ export const useStyles = makeStyles({
   root: {
     
   },
+  slider:{
+    margin: '20px 0px',
+  },
 }, {index: 3});

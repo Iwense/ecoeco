@@ -3,17 +3,10 @@ import { Colors } from '../../../styles/Colors';
 
 export const useStyles = makeStyles({
   root: {
-    
-  },
-  analyticWrapper:{
-    
-  },
-  title:{
-    fontSize: 14,
-    fontWeight: 700,
-  },
-  textLink:{
-    color:Colors.red,
+    padding: 8,
+    marginBottom: 8,
+    width: '100%',
+    height: 180,
   },
   line:{
     display: 'flex',
@@ -24,14 +17,5 @@ export const useStyles = makeStyles({
       marginBottom: 0,
     }
   },
-  price:{
-    color: Colors.black,
-    fontSize:16,
-    fontWeight: 700,
-  },
-  ruble:{
-    color: Colors.black,
-    fontSize: 16,
-    fontWeight: 700,
-  },
-}, {index: 3});
+  
+}, {index: 2});

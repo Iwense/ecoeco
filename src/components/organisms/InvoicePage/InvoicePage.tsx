@@ -8,6 +8,10 @@ import { useHistory,useParams } from "react-router-dom";
 import {formattedDate } from '../../../utils'
 import {IInvoiceList} from '../../../store/models/invoiceList'
 import Panel from "../Panel";
+import Product from "../../molecules/Product";
+import {IProduct} from '../../../store/models/invoiceList'
+import Button from '../../atoms/Button'
+import Slider from "../../molecules/Slider";
 
 type TParams = {
     id: string
@@ -18,7 +22,11 @@ const initialVal : IInvoiceList= {
     price: "1000",
     bonus: "10",
     date: new Date(),
-    time: "1:00"
+    time: "1:00",
+    products: [
+        {id: 1, title: 'Бедро цыпленка-бройлера', subtitle: 'Белая птица охложденная', weight: 12, amount: 5, price: 300},
+        {id: 2, title: 'Курица цыпленка-бройлера', subtitle: 'Белая птица охложденная', weight: 14, amount: 3, price: 500},
+      ]
 }
 
 const InvoicePage: React.FC = () => {
@@ -39,12 +47,35 @@ const InvoicePage: React.FC = () => {
                 </Box>
                 <Box>
                     <Typography>Адрес магазина:</Typography> 
-                    {/* <Typography className={classes.price}>{current?.price}<Typography component="span" className={classes.ruble}>{" "}&#8381;</Typography></Typography> */}
                 </Box>
             </Box>
             <Box className={classes.location}> 
                 <Typography className={classes.locationText}>{"г.Орёл, ул. Ленина, 4"}</Typography>
             </Box>
+
+            <Box className={classes.slider}>
+                <Slider />
+            </Box>
+
+
+
+            <Box>
+                <Box className={classes.info}>
+                    <Typography className={classes.title}>Ваш чек {id}</Typography>
+                    <Typography className={classes.subtitle}>{!!current?.products?.length && current?.products?.length} {" "} товара на сумму:</Typography>
+                    <Box className={classes.line}>
+                        <Typography className={classes.price}>{current?.price || "1500.94"}<Typography component="span" className={classes.ruble}>{" "}&#8381;</Typography></Typography>
+                        <Button value={"Разделить оплату"}/>
+                    </Box>
+                    
+                </Box>
+               
+                {!!current?.products?.length && current?.products.map((item: IProduct, index: number) => (
+                     <Product  key={`product-${item?.id}`} id={item?.id} title={item.title} subtitle={item?.subtitle} weight={item?.weight} amount={item?.amount} price={item?.price}/>
+                ))}
+                
+            </Box>
+
             
         </Box>
       </Panel>

@@ -8,4 +8,6 @@ export const Colors: {[index: string]: string } = {
     darkGray: '#6C6C6C',
     darkRed: '#882B26',
     hoverRed: '#c52b22',
+    pink: '#F3ECEC',
+    green: '#59A69C',
 };

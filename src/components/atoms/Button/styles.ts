@@ -5,8 +5,8 @@ export const useStyles = makeStyles({
   button: {
     background: Colors.red,
     borderRadius: 8,
-    padding: 12,
-    width: '100%',
+    padding: '8px 16px',
+    width: 'fit-content',
     '&:hover': {
       background:Colors.hoverRed,
     }
@@ -15,7 +15,6 @@ export const useStyles = makeStyles({
     color: Colors.white,
     fontSize: 15,
     fontWeight: 700,
-    letterSpacing: 1,
   },
   
 }, {index: 1});

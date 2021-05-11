@@ -10,6 +10,13 @@ export const useStyles = makeStyles({
     fontWeight: 700,
     marginBottom: 12,
   },
+  subtitle:{
+    fontSize: 14,
+    marginBottom: 8,
+  },
+  slider:{
+    margin: '20px 0px',
+  },
   line: {
     display: 'flex',
     justifyContent: 'space-between',
@@ -36,5 +43,8 @@ export const useStyles = makeStyles({
   },
   locationText:{
 
+  },
+  info:{
+    marginBottom: 20,
   },
 }, {index: 2});
