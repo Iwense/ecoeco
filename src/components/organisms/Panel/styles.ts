@@ -7,6 +7,6 @@ export const useStyles = makeStyles({
     borderTopRightRadius: 20, 
     background: Colors.white,
     minHeight: 'calc(100vh - 120px)',
-    padding: 24,
+    padding: 12,
   },
 }, {index: 3});

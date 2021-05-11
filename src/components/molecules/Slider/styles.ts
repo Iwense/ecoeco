@@ -29,6 +29,6 @@ export const useStyles = makeStyles({
     fontWeight: 500,
   },
   swiper:{
-    padding: '20px 0'
+    padding: '30px 0px',
   },
 }, {index: 2});
