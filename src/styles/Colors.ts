@@ -6,4 +6,6 @@ export const Colors: {[index: string]: string } = {
     liteGray: '#EBEBEB',
     yellow: '#F8D856',
     darkGray: '#6C6C6C',
+    darkRed: '#882B26',
+    hoverRed: '#c52b22',
 };
