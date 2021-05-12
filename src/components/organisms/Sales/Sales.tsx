@@ -6,17 +6,16 @@ import Panel from "../Panel";
 import Button from "../../atoms/Button";
 
 const Sales: React.FC = () => {
-  const classes = useStyles();
+    const classes = useStyles();
 
-  return (
-    <Panel>
-      <Box className={classes.root}>
-        <Typography>Новый список</Typography>
-        <Button value={"Создать список"} />
-      </Box>
-    </Panel>
-    
-  );
+    return (
+        <Panel>
+            <Box className={classes.root}>
+                <Typography>Новый список</Typography>
+                <Button value={"Создать список"} />
+            </Box>
+        </Panel>
+    );
 };
 
 export default Sales;

@@ -1,18 +1,20 @@
 import { makeStyles } from "@material-ui/core/styles";
 import { Colors } from '../../../styles/Colors';
+import { IProps } from './Button'
 
 export const useStyles = makeStyles({
   button: {
-    background: Colors.red,
+    background: ({typeBtn}: IProps) => Colors[typeBtn || 'red'],
     borderRadius: 8,
     padding: '8px 16px',
     width: 'fit-content',
+    border: ({typeBtn}: IProps) => typeBtn && typeBtn == 'red' ? 0 : `1px solid ${Colors.liteGray}`,
     '&:hover': {
-      background:Colors.hoverRed,
+      background:({typeBtn}: IProps) => typeBtn && typeBtn == 'red' ?  Colors.hoverRed : Colors.white,
     }
   },
   text:{
-    color: Colors.white,
+    color: ({typeBtn}: IProps) => typeBtn && typeBtn == 'red' ? Colors.white : Colors.black,
     fontSize: 15,
     fontWeight: 700,
   },

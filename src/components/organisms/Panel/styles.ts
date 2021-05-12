@@ -8,5 +8,6 @@ export const useStyles = makeStyles({
     background: Colors.white,
     minHeight: 'calc(100vh - 120px)',
     padding: 12,
+    paddingBottom: 72,
   },
 }, {index: 3});

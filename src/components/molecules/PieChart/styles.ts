@@ -5,7 +5,6 @@ export const useStyles = makeStyles({
   root: {
     padding: 8,
     marginBottom: 8,
-    width: '100%',
     height: 180,
   },
   line:{
@@ -17,5 +16,8 @@ export const useStyles = makeStyles({
       marginBottom: 0,
     }
   },
+  legendWrapper:{
+    position: 'relative',
+  }
   
 }, {index: 2});
