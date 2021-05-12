@@ -3,14 +3,6 @@ import { Colors } from '../../../styles/Colors';
 
 export const useStyles = makeStyles({
   root: {
-    
-  },
-  title:{
-    fontSize: 20,
-    fontWeight: 700,
-    marginBottom: 24,
-  },
-  settings: {
     display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'center',
@@ -19,22 +11,15 @@ export const useStyles = makeStyles({
     width: '100%',
     marginTop: 12,
   },
-  text:{
+  title:{
     color: Colors.black,
     fontSize: 14,
     fontWeight: 700,
   },
-  subtext:{
+  value:{
     color: Colors.black,
-    fontSize: 12,
+    fontSize: 14,
     fontWeight: 500,
-    marginTop: 4,
   },
-  slider:{
-    marginTop: 24,
-  },
-
-  btn:{
-    width: '100%',
-  },
-}, {index: 3});
+  
+}, {index: 1});

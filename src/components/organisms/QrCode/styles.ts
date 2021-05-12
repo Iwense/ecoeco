@@ -4,14 +4,13 @@ import { Colors } from '../../../styles/Colors';
 export const useStyles = makeStyles({
   root: {
   },
-  slider:{
-    overflow: 'auto',
+  scaner:{
   },
-  line: {
-    display: 'flex',
-    justifyContent: 'space-between',
-    alignItems: 'center',
+  text:{
+    color: Colors.white,
+    fontWeight: 700,
+    textAlign: 'center',
     width: '100%',
-    marginBottom: 12,
-  },
+    marginTop: 12,
+  }
 }, {index: 3});

@@ -10,4 +10,5 @@ export const Colors: {[index: string]: string } = {
     hoverRed: '#c52b22',
     pink: '#F3ECEC',
     green: '#59A69C',
+    liteYellow: '#FFED00',
 };

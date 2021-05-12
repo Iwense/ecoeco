@@ -4,7 +4,8 @@ const mainRoutes = {
     analytics: "/analytics",
     list: "/list",
     invoice: "/invoice/:id",
-    profile: "/profile"
+    profile: "/profile",
+    code: '/code',
   };
   
   const authRoutes = {

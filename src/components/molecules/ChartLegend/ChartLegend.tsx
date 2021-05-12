@@ -4,6 +4,7 @@ import { useStyles } from "./styles";
 import { Box, SvgIcon, Typography } from "@material-ui/core";
 import Button from "../../atoms/Button";
 import { useHistory } from "react-router-dom";
+import MiniButton from "../../atoms/MiniButton";
 
 interface IProps {
     dataLegend: any;
@@ -43,6 +44,14 @@ const ChartLegend: React.FC<IProps> = ({ data }) => {
                     value={"Подробнее"}
                     onClick={handleButtonClick}
                 />
+            </Box>
+
+            <Box className={classes.line}>
+                <Box className={classes.buttons}>
+                    <MiniButton typeBtn={"plus"} />
+                    <MiniButton typeBtn={"back"} />
+                    <MiniButton typeBtn={"code"} />
+                </Box>
             </Box>
         </Box>
     );

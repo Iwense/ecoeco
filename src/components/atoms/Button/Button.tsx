@@ -9,16 +9,18 @@ export interface IProps {
     type?: string;
     onClick?: (event: React.MouseEvent<HTMLElement>) => void;
     typeBtn?: "white" | "red";
+    className?: string;
 }
 
 const defaultProps: IProps = {
     onClick: () => null,
     value: "BTN",
     typeBtn: "red",
+    className: "",
 };
 
 const Button: React.FC<IProps> = (props) => {
-    const { value, onClick } = props;
+    const { value, onClick, className } = props;
     const classes = useStyles(props);
 
     return (
@@ -26,7 +28,8 @@ const Button: React.FC<IProps> = (props) => {
             disableRipple
             disableTouchRipple
             focusRipple
-            className={classes.button}
+            className={cn(classes.button, className)}
+            onClick={onClick}
         >
             <Typography className={classes.text}>{value}</Typography>
         </ButtonBase>

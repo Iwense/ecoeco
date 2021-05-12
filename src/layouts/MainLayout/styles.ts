@@ -8,6 +8,7 @@ export const useStyles = makeStyles(() => ({
         flexDirection: "column",
         flexWrap: "nowrap",
         boxSizing: 'border-box',
+        overflow: 'hidden',
     },
     content: {
         minHeight: 'calc(100vh - 60px)',
@@ -24,6 +25,7 @@ export const useStyles = makeStyles(() => ({
         left: 0,
         right: 0,
         paddingTop: 6,
-        boxSizing: 'border-box'
+        boxSizing: 'border-box',
+        zIndex: 999,
     },
 }))

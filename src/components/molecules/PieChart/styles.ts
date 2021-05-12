@@ -3,9 +3,7 @@ import { Colors } from '../../../styles/Colors';
 
 export const useStyles = makeStyles({
   root: {
-    padding: 8,
-    marginBottom: 8,
-    height: 180,
+    height: 200,
   },
   line:{
     display: 'flex',

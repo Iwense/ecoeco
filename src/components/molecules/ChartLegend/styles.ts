@@ -6,7 +6,8 @@ export const useStyles = makeStyles({
     display:'flex',
     justifyContent:'space-between',
     flexDirection: 'column',
-    marginBottom: 8,
+    marginTop: 16,
+    padding: '24px 12px',
     width: '100%',
   },
   text:{
@@ -16,7 +17,6 @@ export const useStyles = makeStyles({
     display: 'grid',
     gridTemplateColumns: 'auto 2fr 1fr',
     alignItems: 'center'
-    // gridGap: 4,
   },
   circle:{
     width:16,
@@ -32,6 +32,12 @@ export const useStyles = makeStyles({
   },
   line:{
     marginTop: 16,
+  },
+  buttons:{
+    width: '100%',
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'center',
   },
   
 }, {index: 2});
