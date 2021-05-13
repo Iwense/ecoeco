@@ -16,8 +16,8 @@ const Slider: React.FC<IProps> = ({ children, count = 2 }) => {
         <Swiper
             spaceBetween={60}
             slidesPerView={count}
-            onSlideChange={() => console.log("slide change")}
-            onSwiper={(swiper) => console.log(swiper)}
+            // onSlideChange={() => console.log("slide change")}
+            // onSwiper={(swiper) => console.log(swiper)}
             className={classes.swiper}
         >
             {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((item, index) => (
