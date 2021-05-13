@@ -12,5 +12,9 @@ export const useStyles = makeStyles({
     textAlign: 'center',
     width: '100%',
     marginTop: 12,
-  }
+  },
+  btn:{
+    width: '100%',
+    margin: '12px 0px',
+  },
 }, {index: 3});

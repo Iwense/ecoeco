@@ -18,5 +18,8 @@ export const useStyles = makeStyles({
     fontSize: 15,
     fontWeight: 700,
   },
+  icon:{
+    
+  },
   
 }, {index: 1});

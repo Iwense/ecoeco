@@ -1,8 +1,15 @@
 import React from "react";
 
 import { useStyles } from "./styles";
-import { Box, ButtonBase, Typography } from "@material-ui/core";
+import {
+    Box,
+    ButtonBase,
+    SvgIcon,
+    SvgIconProps,
+    Typography,
+} from "@material-ui/core";
 import cn from "classnames";
+import { ReactComponent as Plus } from "../../../assets/svg/plus.svg";
 
 export interface IProps {
     value: string;
@@ -10,6 +17,7 @@ export interface IProps {
     onClick?: (event: React.MouseEvent<HTMLElement>) => void;
     typeBtn?: "white" | "red";
     className?: string;
+    icon?: boolean;
 }
 
 const defaultProps: IProps = {
@@ -20,7 +28,7 @@ const defaultProps: IProps = {
 };
 
 const Button: React.FC<IProps> = (props) => {
-    const { value, onClick, className } = props;
+    const { value, onClick, className, icon } = props;
     const classes = useStyles(props);
 
     return (
@@ -31,6 +39,7 @@ const Button: React.FC<IProps> = (props) => {
             className={cn(classes.button, className)}
             onClick={onClick}
         >
+            {icon && <SvgIcon component={Plus} className={classes.icon} />}
             <Typography className={classes.text}>{value}</Typography>
         </ButtonBase>
     );

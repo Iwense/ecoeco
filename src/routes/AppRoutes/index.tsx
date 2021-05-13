@@ -9,6 +9,7 @@ import Profile from "../../components/organisms/Profile";
 import BottomNavBar from "../../components/organisms/BottomNavBar";
 import InvoicePage from "../../components/organisms/InvoicePage";
 import QrCode from "../../components/organisms/QrCode";
+import СreateProductList from "../../components/organisms/СreateProductList";
 
 const AppRoutes = () => (
     <MainLayout footer={<BottomNavBar />}>
@@ -20,6 +21,7 @@ const AppRoutes = () => (
             <Route component={InvoicePage} path={routes.invoice} />
             <Route component={Profile} path={routes.profile} />
             <Route component={QrCode} path={routes.code} />
+            <Route component={СreateProductList} path={routes.createList} />
             <Redirect to={routes.main} />
         </Switch>
     </MainLayout>

@@ -6,6 +6,7 @@ const mainRoutes = {
     invoice: "/invoice/:id",
     profile: "/profile",
     code: '/code',
+    createList: '/createList',
   };
   
   const authRoutes = {

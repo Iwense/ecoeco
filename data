@@ -1,0 +1,76 @@
+code: 1
+data: {json: {user: "ООО "Лента"",…},…}
+
+json: {user: "ООО "Лента"",…}
+cashTotalSum: 0
+dateTime: "2019-03-20T23:03:00"
+ecashTotalSum: 580300
+fiscalDocumentNumber: 141637
+fiscalDriveNumber: "9251440300007971"
+fiscalSign: 4087570038
+items: [{sum: 1290, name: "Пакет ЛЕНТА средний майка 12кг", price: 645, quantity: 2},…]
+0: {sum: 1290, name: "Пакет ЛЕНТА средний майка 12кг", price: 645, quantity: 2}
+1: {sum: 8448, name: "Молоко сгущ ЛЮБ КЛАС с кл эт ГОСТ дп270", price: 8448, quantity: 1}
+2: {sum: 75898, name: "Кревет FINET кор в/п с/г в/м 40-50 1кг", price: 37949, quantity: 2}
+3: {sum: 17089, name: "Смесь SMART&EASY ов мексикан стил 600г", price: 17089, quantity: 1}
+4: {sum: 45456, name: "Пельмени МИРАТОРГ из мрам говяд катБ800г", price: 45456, quantity: 1}
+5: {sum: 5183, name: "Молоко СВЕЖЕЕ ЗАВТРА у/п пит 3,2% 500г", price: 5183, quantity: 1}
+6: {sum: 3227, name: "Жев. резинка ORBIT Bubblemint XXL 20,4г", price: 3227, quantity: 1}
+7: {sum: 17439, name: "Чернослив 365 ДНЕЙ 500г", price: 17439, quantity: 1}
+8: {sum: 11392, name: "Пицца-мини FUGERS Салями 320г", price: 11392, quantity: 1}
+9: {sum: 4177, name: "Рис PROSTO Краснодарский 62,5г*8пак 500г", price: 4177, quantity: 1}
+10: {sum: 20885, name: "Семга ЛЕНТА филе-кусок с/с в/у 200г", price: 20885, quantity: 1}
+11: {sum: 18987, name: "Клубника свежая 250г", price: 18987, quantity: 1}
+12: {sum: 9114, name: "Рис УВЕЛКА Басмати 80г*5 пак 400г", price: 9114, quantity: 1}
+13: {sum: 7309, name: "Колбаса ОСТАНКИНО салями мелкозер с/к120", price: 7309, quantity: 1}
+14: {sum: 9114, name: "Рис УВЕЛКА Жасмин 80г*5 пак 400г", price: 9114, quantity: 1}
+15: {sum: 3357, name: "Лимоны вес 1кг", price: 8069, quantity: 0.416}
+16: {sum: 24207, name: "Авокадо 1шт", price: 8069, quantity: 3}
+17: {sum: 24682, name: "Сыр VALIO Российский п/тв 50% нар 120г", price: 12341, quantity: 2}
+18: {sum: 1226, name: "Лук Эконом вес 1кг", price: 2173, quantity: 0.564}
+19: {sum: 23639, name: "Варенье РАТИБОР Вишня 680г", price: 23639, quantity: 1}
+20: {sum: 18987, name: "Чай трав ТРАВЫ И ПЧЕЛЫ апельс/мелис20пак", price: 18987, quantity: 1}
+21: {sum: 37975, name: "Говядина МИРАТОРГ мяк бедра охл в/у 800г", price: 37975, quantity: 1}
+22: {sum: 11012, name: "Ср-во д/пос FAIRY Неж руки чай.д+мят900", price: 11012, quantity: 1}
+23: {sum: 14240, name: "Макароны LA MOLISANA 15 Spaghetti 500г", price: 14240, quantity: 1}
+24: {sum: 10822, name: "Творог ЛЕНТА 9% 180г", price: 5411, quantity: 2}
+25: {sum: 9493, name: "Шоколад KITKAT Молоч с хруст ваф 202г", price: 9493, quantity: 1}
+26: {sum: 9043, name: "Груша Вильямс 1кг", price: 10442, quantity: 0.866}
+27: {sum: 2657, name: "Хлеб КАРАВАЙ Дарницкий рж/пш пол 375г", price: 2657, quantity: 1}
+28: {sum: 1613, name: "Салфетки 365 ДНЕЙ 24*24см 1-сл. 100шт", price: 1613, quantity: 1}
+29: {sum: 3730, name: "Салат листовой в горшочке (Россия) 1шт", price: 3730, quantity: 1}
+30: {sum: 12436, name: "Сыр TIROLEZ горгонзолла гол плес 60%100", price: 12436, quantity: 1}
+31: {sum: 1217, name: "Губка д/посуды 365 ДНЕЙ больш90х63х25мм", price: 1217, quantity: 1}
+32: {sum: 5315, name: "Салфетки ЛЕНТА целлюлозные 15х15 см 3шт", price: 5315, quantity: 1}
+33: {sum: 13870, name: "Печенье MILKA с овс хлоп и мол шок 168 г", price: 13870, quantity: 1}
+34: {sum: 7974, name: "Яйцо курин РОСКАР стол Экстра С0 10шт", price: 7974, quantity: 1}
+35: {sum: 17088, name: "Томаты сливовидные розовые на ветке 450г", price: 17088, quantity: 1}
+36: {sum: 3598, name: "Ролл КАРАВАЙ пшеничный 200г", price: 3598, quantity: 1}
+37: {sum: 12201, name: "Капуста брокколи вес 1кг", price: 32277, quantity: 0.378}
+38: {sum: 12864, name: "Прокладки SECRETDAY 24,5см 16шт", price: 12864, quantity: 1}
+39: {sum: 6170, name: "Шоколад RITTER SPORT Молоч. с ромом 100г", price: 6170, quantity: 1}
+40: {sum: 17088, name: "Чай TWININGS Эрл Грей /ар берг 25пак 50г", price: 17088, quantity: 1}
+41: {sum: 18788, name: "Т/бумага ZEWA Плюс Белая 2-сл.12шт", price: 18788, quantity: 1}
+kktRegId: "0000035857011003    "
+nds10: 29521
+nds18: 42599
+operationType: 1
+operator: "Старостина Елизавета Александровна"
+rawData: "AwDTDBEEEAA5MjUxNDQwMzAwMDA3OTcxDQQUADAwMDAwMzU4NTcwMTEwMDMgICAg.."
+receiptCode: 3
+requestNumber: 91
+retailPlaceAddress: "196084,СПб,Лиговский пр-т,д.283,лит.А ----------------------------------------"
+shiftNumber: 398
+taxationType: 1
+totalSum: 580300
+user: "ООО \"Лента\""
+userInn: "7814148471"
+
+
+
+items[0]{
+name: "Т/бумага ZEWA Плюс Белая 2-сл.12шт"
+price: 18788
+quantity: 1
+sum: 18788
+}
