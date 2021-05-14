@@ -1,24 +1,27 @@
 {
   "files": {
     "main.css": "/ecoeco/static/css/main.340c3822.chunk.css",
-    "main.js": "/ecoeco/static/js/main.12ec82b4.chunk.js",
-    "main.js.map": "/ecoeco/static/js/main.12ec82b4.chunk.js.map",
+    "main.js": "/ecoeco/static/js/main.f12cc5f4.chunk.js",
+    "main.js.map": "/ecoeco/static/js/main.f12cc5f4.chunk.js.map",
     "runtime-main.js": "/ecoeco/static/js/runtime-main.50dd6f09.js",
     "runtime-main.js.map": "/ecoeco/static/js/runtime-main.50dd6f09.js.map",
     "static/css/2.0f44c06f.chunk.css": "/ecoeco/static/css/2.0f44c06f.chunk.css",
-    "static/js/2.d2c141b9.chunk.js": "/ecoeco/static/js/2.d2c141b9.chunk.js",
-    "static/js/2.d2c141b9.chunk.js.map": "/ecoeco/static/js/2.d2c141b9.chunk.js.map",
+    "static/js/2.68734028.chunk.js": "/ecoeco/static/js/2.68734028.chunk.js",
+    "static/js/2.68734028.chunk.js.map": "/ecoeco/static/js/2.68734028.chunk.js.map",
     "index.html": "/ecoeco/index.html",
     "static/css/2.0f44c06f.chunk.css.map": "/ecoeco/static/css/2.0f44c06f.chunk.css.map",
     "static/css/main.340c3822.chunk.css.map": "/ecoeco/static/css/main.340c3822.chunk.css.map",
-    "static/js/2.d2c141b9.chunk.js.LICENSE.txt": "/ecoeco/static/js/2.d2c141b9.chunk.js.LICENSE.txt",
+    "static/js/2.68734028.chunk.js.LICENSE.txt": "/ecoeco/static/js/2.68734028.chunk.js.LICENSE.txt",
     "static/media/analytics.0140b2b6.svg": "/ecoeco/static/media/analytics.0140b2b6.svg",
+    "static/media/arrowBack.44a02816.svg": "/ecoeco/static/media/arrowBack.44a02816.svg",
     "static/media/back.2e014de3.svg": "/ecoeco/static/media/back.2e014de3.svg",
     "static/media/cart.8a9a12a0.svg": "/ecoeco/static/media/cart.8a9a12a0.svg",
     "static/media/close.0f08c4cf.svg": "/ecoeco/static/media/close.0f08c4cf.svg",
+    "static/media/cog.68b96963.svg": "/ecoeco/static/media/cog.68b96963.svg",
     "static/media/home.bbdc8b68.svg": "/ecoeco/static/media/home.bbdc8b68.svg",
     "static/media/invoice.89b0a4e1.svg": "/ecoeco/static/media/invoice.89b0a4e1.svg",
     "static/media/list.93d98724.svg": "/ecoeco/static/media/list.93d98724.svg",
+    "static/media/logo.ea7551e1.png": "/ecoeco/static/media/logo.ea7551e1.png",
     "static/media/milk.5f7fcd27.png": "/ecoeco/static/media/milk.5f7fcd27.png",
     "static/media/plus.3aa961f6.svg": "/ecoeco/static/media/plus.3aa961f6.svg",
     "static/media/index.css": "/ecoeco/static/media/roboto-vietnamese-400-normal.c0bec65d.woff2",
@@ -29,8 +32,8 @@
   "entrypoints": [
     "static/js/runtime-main.50dd6f09.js",
     "static/css/2.0f44c06f.chunk.css",
-    "static/js/2.d2c141b9.chunk.js",
+    "static/js/2.68734028.chunk.js",
     "static/css/main.340c3822.chunk.css",
-    "static/js/main.12ec82b4.chunk.js"
+    "static/js/main.f12cc5f4.chunk.js"
   ]
 }

@@ -8,18 +8,29 @@
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
+      "src": "./images/96.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "./images/192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "logo512.png",
+      "src": "./images/256.png",
       "type": "image/png",
+      "sizes": "256x256"
+    },
+    {
+      "src": "./images/512.png",
+      "type": "image/png",
+      "purpose": "maskable",
       "sizes": "512x512"
     }
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#FFFFFF",
+  "background_color": "#D02E25"
 }
