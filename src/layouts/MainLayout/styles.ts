@@ -8,12 +8,12 @@ export const useStyles = makeStyles(() => ({
         flexDirection: "column",
         flexWrap: "nowrap",
         boxSizing: 'border-box',
-        overflow: 'hidden',
+        // overflow: 'hidden',
     },
     content: {
-        minHeight: 'calc(100vh - 60px)',
+        // minHeight: 'calc(100vh - 60px)',
         background: Colors.red,
-        paddingTop: 60,
+        boxSizing: 'border-box',
     },
     footer: {
         position: 'fixed',

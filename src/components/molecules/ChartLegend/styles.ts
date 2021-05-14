@@ -9,6 +9,7 @@ export const useStyles = makeStyles({
     marginTop: 16,
     padding: '24px 12px',
     width: '100%',
+    boxSizing: 'border-box',
   },
   text:{
     fontSize: 12,

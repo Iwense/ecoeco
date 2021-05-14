@@ -8,6 +8,7 @@ export const useStyles = makeStyles({
     alignItems: 'center',
     gridTemplateColumns: '1fr 1fr',
     width: '100%',
+    boxSizing: 'border-box',
   },
   line:{
     display: 'flex',

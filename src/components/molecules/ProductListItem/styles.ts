@@ -8,8 +8,9 @@ export const useStyles = makeStyles({
     flexDirection: 'column',
     borderRadius: 8,
     border: `1px solid ${Colors.liteGray}`,
-    padding: '12px 16px',
+    padding: '12px 16px 24px 16px',
     background: `${Colors.liteGray}4c`,
+    boxSizing: 'border-box',
   },
   line:{
     display: 'flex',

@@ -10,6 +10,7 @@ export const useStyles = makeStyles({
     padding: '8px 0px',
     width: '100%',
     marginTop: 12,
+    boxSizing: 'border-box',
   },
   title:{
     color: Colors.black,

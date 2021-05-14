@@ -11,7 +11,8 @@ export const useStyles = makeStyles({
     border: `1px solid ${Colors.liteGray}`,
     '&:hover': {
       background: Colors.white,
-    }
+    },
+    boxSizing: 'border-box',
   },
   icon:{
     fill: Colors.gray,

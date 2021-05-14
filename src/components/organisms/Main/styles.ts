@@ -3,6 +3,7 @@ import { Colors } from '../../../styles/Colors';
 
 export const useStyles = makeStyles({
   root: {
+    boxSizing: 'border-box',
   },
   slider:{
     overflow: 'auto',
@@ -13,5 +14,8 @@ export const useStyles = makeStyles({
     alignItems: 'center',
     width: '100%',
     marginBottom: 12,
+  },
+  loader:{
+    color: Colors.red,
   },
 }, {index: 3});

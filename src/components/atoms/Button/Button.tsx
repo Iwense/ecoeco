@@ -1,13 +1,7 @@
 import React from "react";
 
 import { useStyles } from "./styles";
-import {
-    Box,
-    ButtonBase,
-    SvgIcon,
-    SvgIconProps,
-    Typography,
-} from "@material-ui/core";
+import { ButtonBase, SvgIcon, Typography } from "@material-ui/core";
 import cn from "classnames";
 import { ReactComponent as Plus } from "../../../assets/svg/plus.svg";
 

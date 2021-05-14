@@ -14,7 +14,7 @@ const Slider: React.FC<IProps> = ({ children, count = 2 }) => {
 
     return (
         <Swiper
-            spaceBetween={60}
+            spaceBetween={10}
             slidesPerView={count}
             // onSlideChange={() => console.log("slide change")}
             // onSwiper={(swiper) => console.log(swiper)}

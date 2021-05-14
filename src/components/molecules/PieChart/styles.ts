@@ -4,6 +4,7 @@ import { Colors } from '../../../styles/Colors';
 export const useStyles = makeStyles({
   root: {
     height: 200,
+    boxSizing: 'border-box',
   },
   line:{
     display: 'flex',

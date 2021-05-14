@@ -8,13 +8,13 @@ export const useStyles = makeStyles({
     borderRadius: 8,
     padding: '8px 16px',
     width: 'fit-content',
-    border: ({typeBtn}: IProps) => typeBtn && typeBtn == 'red' ? 0 : `1px solid ${Colors.liteGray}`,
+    border: ({typeBtn}: IProps) => typeBtn && typeBtn === 'red' ? 0 : `1px solid ${Colors.liteGray}`,
     '&:hover': {
-      background:({typeBtn}: IProps) => typeBtn && typeBtn == 'red' ?  Colors.hoverRed : Colors.white,
+      background:({typeBtn}: IProps) => typeBtn && typeBtn === 'red' ?  Colors.hoverRed : Colors.white,
     }
   },
   text:{
-    color: ({typeBtn}: IProps) => typeBtn && typeBtn == 'red' ? Colors.white : Colors.black,
+    color: ({typeBtn}: IProps) => typeBtn && typeBtn === 'red' ? Colors.white : Colors.black,
     fontSize: 15,
     fontWeight: 700,
   },

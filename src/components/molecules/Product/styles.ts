@@ -10,6 +10,7 @@ export const useStyles = makeStyles({
     border: `1px solid ${Colors.liteGray}`,
     padding: '16px 12px',
     marginBottom: 20,
+    boxSizing: 'border-box',
   },
   line:{
     display: 'flex',

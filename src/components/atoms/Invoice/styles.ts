@@ -8,6 +8,7 @@ export const useStyles = makeStyles({
     padding: '8px 16px',
     marginTop: 12,
     cursor: 'pointer',
+    boxSizing: 'border-box',
   },
   line: {
     display: 'flex',
