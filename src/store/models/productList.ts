@@ -32,7 +32,7 @@ interface IState {
 export const productList = createModel<RootModel>()({
   state: {
     error: null,
-    list: initial,
+    list: [],
   }as IState,
   reducers: {
     append: (state: IState,  payload:any , help: string) => {
@@ -43,41 +43,20 @@ export const productList = createModel<RootModel>()({
     },
   },
   effects: (dispatch) => ({
-    addNewProductList(payload, rootState){
-    //   const oldList = rootState.invoiceList.list
-    //   const dateAndTime = payload?.dateTime.split("T");
-    //   let date = '',
-    //       time = ''
-    //     if (dateAndTime && !!dateAndTime.length && dateAndTime.length >= 2) {
-    //         date = dateAndTime[0];
-    //         time = dateAndTime[1];
-    //     }
-    //     // {sum: 1290, name: "Пакет ЛЕНТА средний майка 12кг", price: 645, quantity: 2}
-    //   const newProducts = payload?.items.map((item: any, index:number)=> {
+    addNewProductList(payload,  rootState){
+      const {name, products} = payload
+      const now = new Date(Date.now());
+      const minutes = now.getMinutes();
+      const hour = `${now.getHours()}:${minutes<10? `0${minutes}`: minutes }`
+      const newItem = {
+        id: Date.now(),
+        name: name,
+        date: Date.now(),
+        time: hour,
+        products: products,
+      }
 
-    //     const newArrayNames = item?.name.split(' ') 
-    //     const newWeight = newArrayNames[newArrayNames.length - 1 || "~"]
-    //     const newItem: IProduct = {
-    //       id: index,
-    //       title: item?.name,
-    //       amount: item?.quantity,
-    //     }
-
-    //     return newItem
-
-    //   })  
-
-    //   const newInvoice = {
-    //     id: oldList[oldList.length - 1]?.id + 1,
-    //     date: date, 
-    //     time: time,
-    //     price: payload?.totalSum,
-    //     bonus: '5' ,
-    //     location: payload?.retailPlaceAddress,
-    //     products: newProducts,
-    //   }
-
-    //   dispatch.invoiceList.append(newInvoice, "")
+      dispatch.productList.append(newItem, '')
     }
   }),
 });

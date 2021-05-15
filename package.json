@@ -24,6 +24,7 @@
     "react-redux": "^7.2.4",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
+    "react-swipeable": "^6.1.2",
     "recharts": "^2.0.9",
     "swiper": "^6.6.1",
     "typescript": "^4.2.4",

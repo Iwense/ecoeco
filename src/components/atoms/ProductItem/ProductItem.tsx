@@ -20,7 +20,7 @@ const ProductItem: React.FC<IProps> = (props) => {
                 <Typography className={classes.title}>{title}</Typography>
             </Box>
 
-            {amount && (
+            {!!amount && (
                 <Box className={classes.center}>
                     <Box className={classes.amountBox}>
                         <Typography className={classes.amountBoxText}>

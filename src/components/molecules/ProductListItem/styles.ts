@@ -3,6 +3,13 @@ import { Colors } from '../../../styles/Colors';
 
 export const useStyles = makeStyles({
   root: {
+    boxSizing:'border-box',
+    width:'100%',
+    display: 'flex',
+    justifyContent: 'flex-start',
+    alignItems: 'center',
+  },
+  main:{
     display: 'flex',
     justifyContent: 'space-between',
     flexDirection: 'column',
@@ -11,6 +18,29 @@ export const useStyles = makeStyles({
     padding: '12px 16px 24px 16px',
     background: `${Colors.liteGray}4c`,
     boxSizing: 'border-box',
+    marginTop: 24,
+    width: '100%',
+    transform: 'all 0.5s ease-out',
+  },
+  delete:{
+    background: Colors.red,
+    width:'fit-content',
+    height:100,
+    textAlign: 'center',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginTop: 24,
+    boxSizing:'border-box',
+    padding: '0 12px'
+  },
+  deleteText:{
+    color: Colors.liteGray,
+    fontSize:12,
+    fontWeight: 700,
+  },
+  animate:{
+    transform: 'translateX(-150px)',
   },
   line:{
     display: 'flex',

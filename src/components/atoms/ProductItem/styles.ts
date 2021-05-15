@@ -4,7 +4,6 @@ import { Colors } from '../../../styles/Colors';
 export const useStyles = makeStyles({
   root: {
     display: 'grid',
-    // justifyContent: 'flex-start',
     alignItems: 'center',
     gridTemplateColumns: '1fr 1fr',
     width: '100%',

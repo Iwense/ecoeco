@@ -21,4 +21,12 @@ export const useStyles = makeStyles({
     width: '100%',
     margin: '12px 0'
   },
+  productListText:{
+    marginTop: 12,
+    width: '100%',
+    textAlign: 'center',
+    color: Colors.gray,
+    fontSize: 12,
+    opacity: 0.5,
+  },
 }, {index: 3});

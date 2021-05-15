@@ -39,6 +39,11 @@ const Sales: React.FC = () => {
                     />
                 </Box>
                 <Box className={classes.productList}>
+                    {!productList.length && (
+                        <Typography className={classes.productListText}>
+                            Здесь будут списки покупок
+                        </Typography>
+                    )}
                     {!!productList.length &&
                         productList.map((item: IProductList, index: number) => (
                             <ProductListItem
