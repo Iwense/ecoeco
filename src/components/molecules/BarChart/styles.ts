@@ -10,6 +10,7 @@ export const useStyles = makeStyles({
     boxSizing: 'border-box',
     margin: '16px 0',
     overflow: 'auto',
+    overflowY: 'hidden',
   },
   line:{
     display: 'flex',
