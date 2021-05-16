@@ -35,12 +35,18 @@ export const productList = createModel<RootModel>()({
     list: [],
   }as IState,
   reducers: {
-    append: (state: IState,  payload:any , help: string) => {
+    append: (state: IState,  payload:IProductList ) => {
       return {
         ...state,
         list: [...state.list, payload]
       }
     },
+    delete: (state:IState, id:number ) => {
+      return{
+        ...state,
+        list: state.list.filter((item:IProductList) =>  item?.id !== id)
+      }
+    }
   },
   effects: (dispatch) => ({
     addNewProductList(payload,  rootState){
@@ -51,12 +57,12 @@ export const productList = createModel<RootModel>()({
       const newItem = {
         id: Date.now(),
         name: name,
-        date: Date.now(),
+        date: now,
         time: hour,
         products: products,
       }
 
-      dispatch.productList.append(newItem, '')
+      dispatch.productList.append(newItem)
     }
   }),
 });

@@ -32,7 +32,8 @@ export const useStyles = makeStyles({
     alignItems: 'center',
     marginTop: 24,
     boxSizing:'border-box',
-    padding: '0 12px'
+    padding: '0 12px',
+    borderRadius: 8,
   },
   deleteText:{
     color: Colors.liteGray,
@@ -40,7 +41,7 @@ export const useStyles = makeStyles({
     fontWeight: 700,
   },
   animate:{
-    transform: 'translateX(-150px)',
+    transform: 'translateX(-20px)',
   },
   line:{
     display: 'flex',

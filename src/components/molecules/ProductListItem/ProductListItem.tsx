@@ -13,6 +13,7 @@ interface IProps {
     date: Date;
     time: string;
     products: IProduct[];
+    onDeleteClick?: (event: React.MouseEvent<HTMLElement>) => void;
 }
 
 const ProductListItem: React.FC<IProps> = ({
@@ -21,6 +22,7 @@ const ProductListItem: React.FC<IProps> = ({
     date = new Date(),
     time = "18:00",
     products,
+    onDeleteClick,
 }: IProps) => {
     const classes = useStyles();
     const [show, setShow] = useState(false);
@@ -28,8 +30,6 @@ const ProductListItem: React.FC<IProps> = ({
         onSwipedLeft: () => setShow(true),
         onSwipedRight: () => setShow(false),
     });
-
-    const handleDeleteClick = () => {};
 
     return (
         <Box className={classes.root} {...handlers}>
@@ -53,7 +53,7 @@ const ProductListItem: React.FC<IProps> = ({
                 </Box>
             </Box>
             {show && (
-                <Box className={classes.delete} onClick={handleDeleteClick}>
+                <Box className={classes.delete} onClick={onDeleteClick}>
                     <Typography className={classes.deleteText}>
                         Удалить
                     </Typography>

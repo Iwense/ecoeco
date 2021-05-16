@@ -6,9 +6,16 @@ import Panel from "../Panel";
 import InvoiceList from "../../molecules/InvoiceList";
 import PieChart from "../../molecules/PieChart";
 import MiniButton from "../../atoms/MiniButton";
+import Button from "../../atoms/Button";
+import { useHistory } from "react-router";
 
 const List: React.FC = () => {
     const classes = useStyles();
+    const history = useHistory();
+
+    const handleButtonClick = () => {
+        history.push("/analytics");
+    };
 
     return (
         <Panel>
@@ -24,6 +31,23 @@ const List: React.FC = () => {
 
                 <Box className={classes.analyticWrapper}>
                     <PieChart />
+                    <Box className={classes.rightSide}>
+                        <Box className={classes.line}>
+                            <Button
+                                typeBtn={"white"}
+                                value={"Подробнее"}
+                                onClick={handleButtonClick}
+                            />
+                        </Box>
+
+                        <Box className={classes.line}>
+                            <Box className={classes.buttons}>
+                                <MiniButton typeBtn={"plus"} />
+                                <MiniButton typeBtn={"back"} />
+                                <MiniButton typeBtn={"code"} />
+                            </Box>
+                        </Box>
+                    </Box>
                 </Box>
                 <InvoiceList />
             </Box>

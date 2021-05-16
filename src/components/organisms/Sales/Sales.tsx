@@ -7,7 +7,7 @@ import MiniButton from "../../atoms/MiniButton";
 import Button from "../../atoms/Button";
 import ProductAds from "../../molecules/ProductAds";
 import SliderBlock from "../../atoms/SliderBlock";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { getProductList } from "../../../store/selector";
 import { IProductList } from "../../../store/models/productList";
 import ProductListItem from "../../molecules/ProductListItem";
@@ -17,9 +17,14 @@ const Sales: React.FC = () => {
     const classes = useStyles();
     const productList = useSelector(getProductList);
     const history = useHistory();
+    const dispatch = useDispatch();
 
     const handleNewListClick = () => {
         history.push("/createList");
+    };
+
+    const handleDeleteClick = (id: number) => {
+        dispatch.productList.delete(id);
     };
 
     return (
@@ -52,6 +57,9 @@ const Sales: React.FC = () => {
                                 date={item?.date}
                                 time={item?.time}
                                 products={item?.products}
+                                onDeleteClick={() =>
+                                    handleDeleteClick(item?.id)
+                                }
                             />
                         ))}
                 </Box>

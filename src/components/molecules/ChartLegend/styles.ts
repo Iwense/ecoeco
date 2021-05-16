@@ -7,7 +7,7 @@ export const useStyles = makeStyles({
     justifyContent:'space-between',
     flexDirection: 'column',
     marginTop: 16,
-    padding: '24px 12px',
+    padding: '12px 0px',
     width: '100%',
     boxSizing: 'border-box',
   },
@@ -30,15 +30,6 @@ export const useStyles = makeStyles({
     color: Colors.black,
     fontSize: 12,
     fontWeight: 700,
-  },
-  line:{
-    marginTop: 16,
-  },
-  buttons:{
-    width: '100%',
-    display: 'flex',
-    justifyContent: 'space-between',
-    alignItems: 'center',
   },
   
 }, {index: 2});

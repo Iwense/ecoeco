@@ -3,7 +3,7 @@ import { Colors } from '../../../styles/Colors';
 
 export const useStyles = makeStyles({
   root: {
-    height: 200,
+    height: 120,
     boxSizing: 'border-box',
   },
   line:{
