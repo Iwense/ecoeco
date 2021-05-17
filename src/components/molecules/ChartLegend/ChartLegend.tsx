@@ -6,12 +6,16 @@ import { Box, SvgIcon, Typography } from "@material-ui/core";
 interface IProps {
     dataLegend: any;
     data: any;
-    onClick?: () => void;
+    onClick: (e?: any) => void;
     handleMoveBox?: () => void;
 }
 
-const ChartLegend: React.FC<IProps> = ({ data }) => {
+const ChartLegend: React.FC<IProps> = ({ data, onClick }) => {
     const classes = useStyles();
+
+    const handleClick = (id: number) => {
+        onClick(id);
+    };
 
     return (
         <Box className={classes.root}>
@@ -20,13 +24,17 @@ const ChartLegend: React.FC<IProps> = ({ data }) => {
                     <Box
                         key={`${item?.id}-item-products`}
                         className={classes.item}
+                        onClick={() => handleClick(item?.id)}
                     >
-                        <Box className={classes.circle}></Box>
+                        <Box
+                            className={classes.circle}
+                            style={{ background: item?.color }}
+                        ></Box>
                         <Typography className={classes.text}>
-                            Мясо и птица
+                            {item?.name}
                         </Typography>
                         <Typography noWrap className={classes.price}>
-                            {false || "1500.94"} &#8381;
+                            {item?.value} &#8381;
                         </Typography>
                     </Box>
                 ))}

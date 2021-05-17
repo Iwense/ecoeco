@@ -192,12 +192,12 @@ const СreateProductList: React.FC = () => {
                     />
                 </Box>
 
-                {/* <Box className={classes.slider}>
-                    <Slider count={1} children={<ProductAds />} />
-                </Box> */}
+                <Box className={classes.slider}>
+                    <Slider count={1} children={[<ProductAds />]} />
+                </Box>
 
                 <Button
-                    value={"Добавить чек"}
+                    value={"Добавить список"}
                     className={classes.btn}
                     onClick={handleAddClick}
                 />

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import { useStyles } from "./styles";
 import { Box, SvgIcon, Typography } from "@material-ui/core";
@@ -12,9 +12,14 @@ import { useHistory } from "react-router";
 const List: React.FC = () => {
     const classes = useStyles();
     const history = useHistory();
+    const [price, setPrice] = useState("4031,86");
 
     const handleButtonClick = () => {
         history.push("/analytics");
+    };
+
+    const handleChangeChart = () => {
+        setPrice("1500.94");
     };
 
     return (
@@ -25,12 +30,12 @@ const List: React.FC = () => {
                         Покупка за <span className={classes.textLink}>май</span>
                     </Typography>
                     <Typography className={classes.price}>
-                        1500.94 &#8381;
+                        {price} &#8381;
                     </Typography>
                 </Box>
 
                 <Box className={classes.analyticWrapper}>
-                    <PieChart />
+                    <PieChart onClick={handleChangeChart} />
                     <Box className={classes.rightSide}>
                         <Box className={classes.line}>
                             <Button

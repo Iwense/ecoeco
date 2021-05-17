@@ -7,6 +7,7 @@ const mainRoutes = {
     profile: "/profile",
     code: '/code',
     createList: '/createList',
+    promo: '/promo',
   };
   
   const authRoutes = {

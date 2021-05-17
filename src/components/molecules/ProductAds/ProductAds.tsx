@@ -44,7 +44,7 @@ const ProductAds: React.FC<IProps> = ({
                         disableTouchRipple
                         className={classes.btn}
                     >
-                        Заказать со скидкой
+                        Подробнее
                     </Button>
                 </Box>
                 <Box className={classes.priceInfo}>

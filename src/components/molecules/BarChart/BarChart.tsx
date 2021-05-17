@@ -125,7 +125,10 @@ const BarChart: React.FC<IProps> = () => {
                             tickLine={false}
                             tick={<CustomizedTick data={data} />}
                         />
-                        <Tooltip content={<CustomTooltip />} />
+                        <Tooltip
+                            cursor={{ fill: "transparent" }}
+                            content={<CustomTooltip />}
+                        />
                         <Bar
                             dataKey='sale'
                             stackId='a'

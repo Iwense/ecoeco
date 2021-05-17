@@ -45,4 +45,8 @@ export const useStyles = makeStyles({
   button:{
     width: '100%',
   },
+  down:{
+    width: 12,
+    height: 12,
+  },
 }, {index: 3});

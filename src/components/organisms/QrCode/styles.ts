@@ -4,8 +4,13 @@ import { Colors } from '../../../styles/Colors';
 export const useStyles = makeStyles({
   root: {
     boxSizing: 'border-box',
+    minHeight: '100vh',
   },
   scaner:{
+  },
+  content:{
+    boxSizing: 'border-box',
+    padding: 12,
   },
   text:{
     color: Colors.white,

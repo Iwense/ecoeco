@@ -50,7 +50,15 @@ const Profile: React.FC = () => {
                     />
                 ))}
                 <Box className={classes.slider}>
-                    <Slider count={1} children={<ProductAds />} />
+                    <Slider
+                        count={1}
+                        children={[
+                            <ProductAds />,
+                            <ProductAds />,
+                            <ProductAds />,
+                            <ProductAds />,
+                        ]}
+                    />
                 </Box>
 
                 <Button className={classes.btn} value={"Выйти"} />

@@ -15,7 +15,14 @@ export const useStyles = makeStyles({
     width: '100%',
     marginBottom: 12,
   },
+  title:{
+    fontSize:18,
+    fontWeight: 700,
+  },
   loader:{
     color: Colors.red,
+  },
+  btn:{
+    height: '50px',
   },
 }, {index: 3});

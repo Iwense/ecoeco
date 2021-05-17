@@ -92,7 +92,7 @@ const QrCode: React.FC = () => {
                 )}
 
                 {!!invoice?.items?.length && (
-                    <>
+                    <Box className={classes.content}>
                         <Box>
                             <Typography className={classes.text}>
                                 {`Чек на сумму : ${price}`}
@@ -108,10 +108,10 @@ const QrCode: React.FC = () => {
                             typeBtn={"white"}
                             onClick={handleAddInvoiceClick}
                         />
-                    </>
+                    </Box>
                 )}
             </Box>
-            <Button
+            {/* <Button
                 typeBtn='white'
                 value='Проверка АПИ'
                 onClick={() =>
@@ -119,7 +119,7 @@ const QrCode: React.FC = () => {
                         "t=20190320T2303&s=5803.00&fn=9251440300007971&i=141637&fp=4087570038&n=1"
                     )
                 }
-            />
+            /> */}
         </Box>
     );
 };

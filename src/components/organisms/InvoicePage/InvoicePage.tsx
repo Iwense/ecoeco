@@ -76,7 +76,14 @@ const InvoicePage: React.FC = () => {
                 </Box>
 
                 <Box className={classes.slider}>
-                    <Slider count={2} children={<SliderBlock />} />
+                    <Slider
+                        count={2}
+                        children={[
+                            <SliderBlock />,
+                            <SliderBlock next cupon color='yellow' />,
+                            <SliderBlock cupon color='black' />,
+                        ]}
+                    />
                 </Box>
 
                 <Box>

@@ -29,6 +29,7 @@ export const useStyles = makeStyles({
     justifyContent: 'space-between',
     flexDirection: 'column',
     alignItems: 'flex-end',
+    marginTop:12,
   },
   price:{
     color: Colors.black,
@@ -45,5 +46,6 @@ export const useStyles = makeStyles({
     display: 'grid',
     gridTemplateColumns: '1fr 1fr 1fr',
     gridGap: 12,
+   
   },
 }, {index: 3});

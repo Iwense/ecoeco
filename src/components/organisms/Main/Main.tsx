@@ -9,6 +9,7 @@ import ProductAds from "../../molecules/ProductAds";
 import SliderBlock from "../../atoms/SliderBlock";
 import Loader from "../../atoms/Loader";
 import { useHistory } from "react-router";
+import CuponAds from "../../molecules/CuponAds";
 
 const Slider = React.lazy(() => import("../../molecules/Slider"));
 
@@ -21,19 +22,45 @@ const Main: React.FC = () => {
             <Suspense fallback={<Loader />}>
                 <Box className={classes.root}>
                     <Box className={classes.slider}>
-                        <Slider count={2} children={<SliderBlock />} />
+                        <Slider
+                            count={2}
+                            children={[
+                                <SliderBlock />,
+                                <SliderBlock next cupon color='yellow' />,
+                                <SliderBlock cupon color='black' />,
+                            ]}
+                        />
                     </Box>
                     <Box className={classes.line}>
-                        <MiniButton typeBtn={"plus"} />
+                        {/* <MiniButton typeBtn={"plus"} /> */}
                         <MiniButton typeBtn={"code"} />
                         <Button
+                            className={classes.btn}
                             value={"Спиcок покупок"}
                             typeBtn={"white"}
                             onClick={() => history.push("/sales")}
                         />
                     </Box>
                     <Box className={classes.line}>
-                        <Slider count={1} children={<ProductAds />} />
+                        <Slider
+                            count={1}
+                            children={[
+                                <ProductAds />,
+                                <ProductAds />,
+                                <ProductAds />,
+                                <ProductAds />,
+                            ]}
+                        />
+                    </Box>
+
+                    <Typography className={classes.title}>
+                        Акции и промокоды
+                    </Typography>
+                    <Box className={classes.line}>
+                        <CuponAds color='black' />
+                    </Box>
+                    <Box className={classes.line}>
+                        <CuponAds next color='yellow' />
                     </Box>
                 </Box>
             </Suspense>

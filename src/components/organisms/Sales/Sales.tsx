@@ -31,12 +31,20 @@ const Sales: React.FC = () => {
         <Panel>
             <Box className={classes.root}>
                 <Box className={classes.slider}>
-                    <Slider count={2} children={<SliderBlock />} />
+                    <Slider
+                        count={2}
+                        children={[
+                            <SliderBlock />,
+                            <SliderBlock next cupon color='yellow' />,
+                            <SliderBlock cupon color='black' />,
+                        ]}
+                    />
                 </Box>
                 <Box className={classes.line}>
-                    <MiniButton typeBtn={"plus"} />
-                    <MiniButton typeBtn={"code"} />
+                    {/* <MiniButton typeBtn={"plus"} /> */}
+                    {/* <MiniButton typeBtn={"code"} /> */}
                     <Button
+                        className={classes.btn}
                         icon
                         value={"Новый список"}
                         typeBtn={"white"}
@@ -64,7 +72,15 @@ const Sales: React.FC = () => {
                         ))}
                 </Box>
                 <Box className={classes.line}>
-                    <Slider count={1} children={<ProductAds />} />
+                    <Slider
+                        count={1}
+                        children={[
+                            <ProductAds />,
+                            <ProductAds />,
+                            <ProductAds />,
+                            <ProductAds />,
+                        ]}
+                    />
                 </Box>
             </Box>
         </Panel>

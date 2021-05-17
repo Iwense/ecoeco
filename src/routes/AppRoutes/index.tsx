@@ -10,6 +10,7 @@ import BottomNavBar from "../../components/organisms/BottomNavBar";
 import InvoicePage from "../../components/organisms/InvoicePage";
 import QrCode from "../../components/organisms/QrCode";
 import СreateProductList from "../../components/organisms/СreateProductList";
+import PromoPanel from "../../components/organisms/PromoPanel";
 
 const AppRoutes = () => (
     <MainLayout footer={<BottomNavBar />}>
@@ -22,6 +23,7 @@ const AppRoutes = () => (
             <Route component={Profile} path={routes.profile} />
             <Route component={QrCode} path={routes.code} />
             <Route component={СreateProductList} path={routes.createList} />
+            <Route component={PromoPanel} path={routes.promo} />
             <Redirect to={routes.main} />
         </Switch>
     </MainLayout>
