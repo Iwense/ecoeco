@@ -34,6 +34,10 @@ const BottomNavBar: React.FC = () => {
         return data.find((item: IItem) => item?.link === location.pathname)?.id;
     };
 
+    useEffect(() => {
+        setActive(getID());
+    }, [location.pathname]);
+
     const [active, setActive] = useState(getID());
 
     const handleClick = (str: string, id: number) => {

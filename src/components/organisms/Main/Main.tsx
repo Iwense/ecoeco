@@ -11,8 +11,6 @@ import Loader from "../../atoms/Loader";
 import { useHistory } from "react-router";
 import CuponAds from "../../molecules/CuponAds";
 import CuponAdsVtb from "../../molecules/CuponAdsVtb";
-import { getAdsProducts } from "../../../store/selector";
-import { useSelector } from "react-redux";
 import ProductAdsSlider from "../../molecules/ProductAdsSlider";
 
 const Slider = React.lazy(() => import("../../molecules/Slider"));

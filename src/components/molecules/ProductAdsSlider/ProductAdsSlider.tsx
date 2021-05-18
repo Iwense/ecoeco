@@ -14,6 +14,7 @@ const ProductAdsSlider = React.memo(() => {
     const arrayForSlider = () => {
         const result = adsProducts.map((item: any) => (
             <ProductAds
+                key={`productsAds - ${item?.id}`}
                 title={item.title}
                 subtitle={item.subtitle}
                 price={item.price}

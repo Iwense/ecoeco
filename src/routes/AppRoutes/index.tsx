@@ -12,21 +12,23 @@ import QrCode from "../../components/organisms/QrCode";
 import СreateProductList from "../../components/organisms/СreateProductList";
 import PromoPanel from "../../components/organisms/PromoPanel";
 
-const AppRoutes = () => (
-    <MainLayout footer={<BottomNavBar />}>
-        <Switch>
-            <Route component={Main} exact path={routes.main} />
-            <Route component={Sales} path={routes.sales} />
-            <Route component={Analytics} path={routes.analytics} />
-            <Route component={List} path={routes.list} />
-            <Route component={InvoicePage} path={routes.invoice} />
-            <Route component={Profile} path={routes.profile} />
-            <Route component={QrCode} path={routes.code} />
-            <Route component={СreateProductList} path={routes.createList} />
-            <Route component={PromoPanel} path={routes.promo} />
-            <Redirect to={routes.main} />
-        </Switch>
-    </MainLayout>
-);
+const AppRoutes = () => {
+    return (
+        <MainLayout footer={<BottomNavBar />}>
+            <Switch>
+                <Route component={Main} exact path={routes.main} />
+                <Route component={Sales} path={routes.sales} />
+                <Route component={Analytics} path={routes.analytics} />
+                <Route component={List} path={routes.list} />
+                <Route component={InvoicePage} path={routes.invoice} />
+                <Route component={Profile} path={routes.profile} />
+                <Route component={QrCode} path={routes.code} />
+                <Route component={СreateProductList} path={routes.createList} />
+                <Route component={PromoPanel} path={routes.promo} />
+                <Redirect to={routes.main} />
+            </Switch>
+        </MainLayout>
+    );
+};
 
 export default AppRoutes;
