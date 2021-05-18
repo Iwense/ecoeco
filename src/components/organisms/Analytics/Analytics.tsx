@@ -8,6 +8,7 @@ import Button from "../../atoms/Button";
 import BarChart from "../../molecules/BarChart";
 import LineChart from "../../molecules/LineChart";
 import { ReactComponent as Down } from "../../../assets/svg/down.svg";
+import { ReactComponent as Calender } from "../../../assets/svg/calendar.svg";
 import AdsPanel from "../AdsPanel";
 
 const Analytics: React.FC = () => {
@@ -38,7 +39,14 @@ const Analytics: React.FC = () => {
             <Box className={classes.root}>
                 <Box className={classes.line}>
                     <Typography className={classes.title}>
-                        <span className={classes.textLink}>Май</span>
+                        <span className={classes.textLink}>
+                            {" "}
+                            <SvgIcon
+                                component={Calender}
+                                className={classes.down}
+                            />{" "}
+                            Май
+                        </span>
                     </Typography>
                     <Typography className={classes.price}>
                         {price} &#8381;

@@ -16,6 +16,7 @@ const QrCode: React.FC = () => {
     const [date, setDate] = useState("");
     const [time, setTime] = useState("");
     const [price, setPrice] = useState("");
+    const [error, setError] = useState<string>("");
 
     const callApi = (qrCodeString: string) => {
         if (!qrCodeString) return;
@@ -38,7 +39,6 @@ const QrCode: React.FC = () => {
         request.onload = function (event) {
             if (request.status === 200) {
                 const parse = JSON.parse(request.response);
-                console.log("request = ", parse);
                 const data = parse?.data?.json;
                 setInvoice(data);
             } else {
@@ -52,7 +52,8 @@ const QrCode: React.FC = () => {
         callApi(result);
     }, [result]);
 
-    const handleError = (err: any) => {
+    const handleError = (err: string) => {
+        setError(err.toString());
         console.log("Error with scan ", err);
     };
 
@@ -69,6 +70,7 @@ const QrCode: React.FC = () => {
     const handleScan = (data: string | null) => {
         if (data) {
             setResult(data);
+            setError("");
         }
     };
 
@@ -89,6 +91,10 @@ const QrCode: React.FC = () => {
                     <Typography className={classes.text}>
                         {"Наведите камеру на QR-код"}
                     </Typography>
+                )}
+
+                {error && (
+                    <Typography className={classes.text}>{error}</Typography>
                 )}
 
                 {!!invoice?.items?.length && (
