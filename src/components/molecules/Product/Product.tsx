@@ -9,7 +9,7 @@ interface IProps {
     id: number;
     title: string;
     subtitle: string;
-    weight: number;
+    weight: string;
     amount: number;
     price: number;
     image?: string;
@@ -32,7 +32,7 @@ const Product: React.FC<IProps> = ({
                         {title || "Бедро цыпленка-бройлера"}
                     </Typography>
                     <Typography className={classes.subtitle}>
-                        {subtitle || "Белая птица охложденная"}
+                        {subtitle || ""}
                     </Typography>
 
                     <Box className={classes.info}>
@@ -40,8 +40,8 @@ const Product: React.FC<IProps> = ({
                             <Box className={classes.infoBox}>
                                 <Typography>Вес</Typography>
                             </Box>
-                            <Typography className={classes.infoText}>
-                                {weight || "1,004 "} кг
+                            <Typography noWrap className={classes.infoText}>
+                                {weight || "1,004 "}
                             </Typography>
                         </Box>
 
@@ -49,14 +49,14 @@ const Product: React.FC<IProps> = ({
                             <Box className={classes.infoBox}>
                                 <Typography>Шт</Typography>
                             </Box>
-                            <Typography className={classes.infoText}>
-                                {amount || "5"} кг
+                            <Typography noWrap className={classes.infoText}>
+                                {amount || "5"}
                             </Typography>
                         </Box>
                     </Box>
                 </Box>
                 <Box className={classes.imageBox}>
-                    <img className={classes.image} src={Milk} alt={title} />
+                    <img className={classes.image} src={image} alt={title} />
                 </Box>
                 <SvgIcon className={classes.star} component={Star} />
             </Box>
@@ -73,7 +73,7 @@ const Product: React.FC<IProps> = ({
                     </Typography>
                 </Box>
                 <Typography className={classes.price}>
-                    {price || "1500.94"}
+                    {price * amount || "1500.94"}
                     <Typography component='span' className={classes.ruble}>
                         {" "}
                         &#8381;

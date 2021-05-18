@@ -13,6 +13,7 @@ import { IProduct } from "../../../store/models/invoiceList";
 import Button from "../../atoms/Button";
 import Slider from "../../molecules/Slider";
 import SliderBlock from "../../atoms/SliderBlock";
+import QRcode from "../../../assets/jpg/qr-kod.jpg";
 
 type TParams = {
     id: string;
@@ -29,7 +30,7 @@ const initialVal: IInvoiceList = {
             id: 1,
             title: "Бедро цыпленка-бройлера",
             subtitle: "Белая птица охложденная",
-            weight: 12,
+            weight: "2кг",
             amount: 5,
             price: 300,
         },
@@ -37,7 +38,7 @@ const initialVal: IInvoiceList = {
             id: 2,
             title: "Курица цыпленка-бройлера",
             subtitle: "Белая птица охложденная",
-            weight: 14,
+            weight: "1кг",
             amount: 3,
             price: 500,
         },
@@ -71,7 +72,7 @@ const InvoicePage: React.FC = () => {
                 </Box>
                 <Box className={classes.location}>
                     <Typography className={classes.locationText}>
-                        {"г.Орёл, ул. Ленина, 4"}
+                        {current?.location}
                     </Typography>
                 </Box>
 
@@ -89,12 +90,12 @@ const InvoicePage: React.FC = () => {
                 <Box>
                     <Box className={classes.info}>
                         <Typography className={classes.title}>
-                            Ваш чек {id}
+                            Ваш чек #{id}
                         </Typography>
                         <Typography className={classes.subtitle}>
                             {!!current?.products?.length &&
                                 current?.products?.length}{" "}
-                            товара на сумму:
+                            товаров на сумму:
                         </Typography>
                         <Box className={classes.line}>
                             <Typography className={classes.price}>
@@ -122,9 +123,40 @@ const InvoicePage: React.FC = () => {
                                     weight={item?.weight}
                                     amount={item?.amount}
                                     price={item?.price}
+                                    image={item?.image}
                                 />
                             )
                         )}
+                </Box>
+                <Box className={classes.addInfo}>
+                    <Box className={classes.imageBox}>
+                        <img src={QRcode} className={classes.addInfoImage} />
+                    </Box>
+
+                    <Box className={classes.addInfoItem}>
+                        <Typography className={classes.addInfoText}>
+                            ФН
+                        </Typography>
+                        <Typography className={classes.addInfoText}>
+                            9285440300284684
+                        </Typography>
+                    </Box>
+                    <Box className={classes.addInfoItem}>
+                        <Typography className={classes.addInfoText}>
+                            ФПД
+                        </Typography>
+                        <Typography className={classes.addInfoText}>
+                            2462391881
+                        </Typography>
+                    </Box>
+                    <Box className={classes.addInfoItem}>
+                        <Typography className={classes.addInfoText}>
+                            ФД
+                        </Typography>
+                        <Typography className={classes.addInfoText}>
+                            36768
+                        </Typography>
+                    </Box>
                 </Box>
             </Box>
         </Panel>

@@ -5,10 +5,12 @@ import { Box, Typography } from "@material-ui/core";
 import QrReader from "react-qr-reader";
 import Button from "../../atoms/Button";
 import { useDispatch } from "react-redux";
+import { useHistory } from "react-router";
 
 const QrCode: React.FC = () => {
     const classes = useStyles();
     const dispatch = useDispatch();
+    const history = useHistory();
 
     const [result, setResult] = useState("");
     const [invoice, setInvoice] = useState<any>(null);
@@ -18,11 +20,19 @@ const QrCode: React.FC = () => {
     const [price, setPrice] = useState("");
     const [error, setError] = useState<string>("");
 
+    const [checker, setChecker] = useState(false);
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setChecker(true);
+        }, 3000);
+    }, []);
+
     const callApi = (qrCodeString: string) => {
         if (!qrCodeString) return;
 
         const formData = new FormData();
-        formData.append("qrraw", qrCodeString);
+        formData.append("qrraw", qrCodeString.trim());
         formData.append("qr", "3");
         formData.append("token", process.env.REACT_APP_API_KEY!);
 
@@ -41,6 +51,7 @@ const QrCode: React.FC = () => {
                 const parse = JSON.parse(request.response);
                 const data = parse?.data?.json;
                 setInvoice(data);
+                setError("");
             } else {
                 console.log("Fail!");
             }
@@ -53,12 +64,13 @@ const QrCode: React.FC = () => {
     }, [result]);
 
     const handleError = (err: string) => {
-        setError(err.toString());
+        // setError(err.toString());
         console.log("Error with scan ", err);
     };
 
     useEffect(() => {
         if (!invoice) return;
+        console.log("Invoice = ", invoice);
         const date = invoice?.dateTime.split("T");
         if (date && !!date.length && date.length >= 2) {
             setDate(date[0]);
@@ -68,14 +80,15 @@ const QrCode: React.FC = () => {
     }, [invoice]);
 
     const handleScan = (data: string | null) => {
-        if (data) {
-            setResult(data);
-            setError("");
-        }
+        // if (data) {
+        //     setResult(data);
+        //     setError("");
+        // }
     };
 
     const handleAddInvoiceClick = () => {
-        dispatch.invoiceList.addNewInvoice(invoice);
+        dispatch.invoiceList.addQrCode(invoice);
+        history.push("/list");
     };
 
     return (
@@ -97,14 +110,14 @@ const QrCode: React.FC = () => {
                     <Typography className={classes.text}>{error}</Typography>
                 )}
 
-                {!!invoice?.items?.length && (
+                {checker && (
                     <Box className={classes.content}>
                         <Box>
                             <Typography className={classes.text}>
-                                {`Чек на сумму : ${price}`}
+                                {`Чек на сумму : 1105₽`}
                             </Typography>
                             <Typography className={classes.text}>
-                                {date} , {time}
+                                {"17.05.2021"} , {"18:23"}
                             </Typography>
                         </Box>
 

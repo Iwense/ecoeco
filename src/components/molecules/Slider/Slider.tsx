@@ -23,7 +23,7 @@ const Slider: React.FC<IProps> = ({ children, count = 2 }) => {
         >
             {!!children.length &&
                 children.map((item, index) => (
-                    <SwiperSlide key={`${Date.now()}-slide-${index}-${item}`}>
+                    <SwiperSlide key={`${Date.now()}-slide-${index}`}>
                         {children[index]}
                     </SwiperSlide>
                 ))}

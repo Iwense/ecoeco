@@ -11,4 +11,7 @@ export const Colors: {[index: string]: string } = {
     pink: '#F3ECEC',
     green: '#59A69C',
     liteYellow: '#FFED00',
+    blue: '#079AE8',
 };
+
+//₽

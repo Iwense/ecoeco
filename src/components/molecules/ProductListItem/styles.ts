@@ -8,6 +8,7 @@ export const useStyles = makeStyles({
     display: 'flex',
     justifyContent: 'flex-start',
     alignItems: 'center',
+    position:'relative',
   },
   main:{
     display: 'flex',
@@ -23,9 +24,12 @@ export const useStyles = makeStyles({
     transform: 'all 0.5s ease-out',
   },
   delete:{
+    position:'absolute',
+    right:0,
+    top: 0,
+    bottom:0,
     background: Colors.red,
     width:'fit-content',
-    height:100,
     textAlign: 'center',
     display: 'flex',
     justifyContent: 'center',
@@ -33,7 +37,7 @@ export const useStyles = makeStyles({
     marginTop: 24,
     boxSizing:'border-box',
     padding: '0 12px',
-    borderRadius: 8,
+    borderRadius: '0 8px 8px 0',
   },
   deleteText:{
     color: Colors.liteGray,
@@ -41,7 +45,7 @@ export const useStyles = makeStyles({
     fontWeight: 700,
   },
   animate:{
-    transform: 'translateX(-20px)',
+    transform: 'translateX(-60px)',
   },
   line:{
     display: 'flex',

@@ -10,6 +10,10 @@ import SliderBlock from "../../atoms/SliderBlock";
 import Loader from "../../atoms/Loader";
 import { useHistory } from "react-router";
 import CuponAds from "../../molecules/CuponAds";
+import CuponAdsVtb from "../../molecules/CuponAdsVtb";
+import { getAdsProducts } from "../../../store/selector";
+import { useSelector } from "react-redux";
+import ProductAdsSlider from "../../molecules/ProductAdsSlider";
 
 const Slider = React.lazy(() => import("../../molecules/Slider"));
 
@@ -41,24 +45,18 @@ const Main: React.FC = () => {
                             onClick={() => history.push("/sales")}
                         />
                     </Box>
-                    <Box className={classes.line}>
-                        <Slider
-                            count={1}
-                            children={[
-                                <ProductAds />,
-                                <ProductAds />,
-                                <ProductAds />,
-                                <ProductAds />,
-                            ]}
-                        />
-                    </Box>
+                    <ProductAdsSlider />
 
                     <Typography className={classes.title}>
                         Акции и промокоды
                     </Typography>
                     <Box className={classes.line}>
+                        <CuponAdsVtb />
+                    </Box>
+                    <Box className={classes.line}>
                         <CuponAds color='black' />
                     </Box>
+
                     <Box className={classes.line}>
                         <CuponAds next color='yellow' />
                     </Box>

@@ -68,7 +68,7 @@ const data = [
     },
     {
         name: "06",
-        price: 700,
+        price: 922,
         sale: 350,
         date: "18.05",
     },

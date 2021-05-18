@@ -1,4 +1,5 @@
-export function formattedDate(dt = new Date) {
+export function formattedDate(dt:string | Date) {
+    if (typeof dt === "string") return dt
     const d = new Date(dt)
     let month = String(d.getMonth() + 1);
     let day = String(d.getDate());

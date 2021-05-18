@@ -9,6 +9,7 @@ import Slider from "../../molecules/Slider";
 import SliderBlock from "../../atoms/SliderBlock";
 import Button from "../../atoms/Button";
 import ProductAds from "../../molecules/ProductAds";
+import ProductAdsSlider from "../../molecules/ProductAdsSlider";
 
 const data = [
     { id: 1, title: "Имя пользователя", value: "Александр" },
@@ -49,17 +50,7 @@ const Profile: React.FC = () => {
                         value={item?.value}
                     />
                 ))}
-                <Box className={classes.slider}>
-                    <Slider
-                        count={1}
-                        children={[
-                            <ProductAds />,
-                            <ProductAds />,
-                            <ProductAds />,
-                            <ProductAds />,
-                        ]}
-                    />
-                </Box>
+                <ProductAdsSlider />
 
                 <Button className={classes.btn} value={"Выйти"} />
             </Box>

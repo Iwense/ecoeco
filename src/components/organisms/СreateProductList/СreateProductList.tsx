@@ -12,6 +12,7 @@ import Slider from "../../molecules/Slider";
 import ProductAds from "../../molecules/ProductAds";
 import Button from "../../atoms/Button";
 import { useHistory } from "react-router-dom";
+import ProductAdsSlider from "../../molecules/ProductAdsSlider";
 
 const СreateProductList: React.FC = () => {
     const classes = useStyles();
@@ -192,9 +193,7 @@ const СreateProductList: React.FC = () => {
                     />
                 </Box>
 
-                <Box className={classes.slider}>
-                    <Slider count={1} children={[<ProductAds />]} />
-                </Box>
+                <ProductAdsSlider />
 
                 <Button
                     value={"Добавить список"}

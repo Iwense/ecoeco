@@ -8,6 +8,7 @@ import LinearProgress from "@material-ui/core/LinearProgress";
 import { ReactComponent as Cog } from "../../../assets/svg/cog.svg";
 import { ReactComponent as ArrowBack } from "../../../assets/svg/arrowBack.svg";
 import CuponAds from "../../molecules/CuponAds";
+import CuponAdsVtb from "../../molecules/CuponAdsVtb";
 
 interface IProps {
     back?: boolean;
@@ -76,6 +77,9 @@ const AdsPanel: React.FC<IProps> = ({ back = false }: IProps) => {
                         variant='determinate'
                         value={progress}
                     />
+                </Box>
+                <Box className={classes.line}>
+                    <CuponAdsVtb />
                 </Box>
                 <Box className={classes.line}>
                     <CuponAds color={"black"} />

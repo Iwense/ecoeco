@@ -12,6 +12,7 @@ import { getProductList } from "../../../store/selector";
 import { IProductList } from "../../../store/models/productList";
 import ProductListItem from "../../molecules/ProductListItem";
 import { useHistory } from "react-router";
+import ProductAdsSlider from "../../molecules/ProductAdsSlider";
 
 const Sales: React.FC = () => {
     const classes = useStyles();
@@ -71,17 +72,7 @@ const Sales: React.FC = () => {
                             />
                         ))}
                 </Box>
-                <Box className={classes.line}>
-                    <Slider
-                        count={1}
-                        children={[
-                            <ProductAds />,
-                            <ProductAds />,
-                            <ProductAds />,
-                            <ProductAds />,
-                        ]}
-                    />
-                </Box>
+                <ProductAdsSlider />
             </Box>
         </Panel>
     );

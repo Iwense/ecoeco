@@ -47,4 +47,31 @@ export const useStyles = makeStyles({
   info:{
     marginBottom: 20,
   },
+  addInfo:{
+   
+    marginBottom: 20,
+  },
+  imageBox: {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginBottom: 12,
+  },
+  addInfoImage:{
+    width: 120,
+    height: 120,
+  },
+  addInfoItem:{
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    marginTop: 12,
+    borderBottom: `1px solid ${Colors.liteGray}`,
+    '&:last-child':{
+      borderBottom: 0,
+    }
+  },
+  addInfoText:{
+
+  },
 }, {index: 2});

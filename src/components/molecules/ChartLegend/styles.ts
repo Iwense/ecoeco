@@ -17,7 +17,8 @@ export const useStyles = makeStyles({
   item:{
     display: 'grid',
     gridTemplateColumns: 'auto 2fr 1fr',
-    alignItems: 'center'
+    alignItems: 'center',
+    marginBottom: 4,
   },
   circle:{
     width:16,
