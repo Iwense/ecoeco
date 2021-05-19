@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/ecoeco/static/css/main.340c3822.chunk.css",
-    "main.js": "/ecoeco/static/js/main.7d8c585f.chunk.js",
-    "main.js.map": "/ecoeco/static/js/main.7d8c585f.chunk.js.map",
+    "main.js": "/ecoeco/static/js/main.c51d0be1.chunk.js",
+    "main.js.map": "/ecoeco/static/js/main.c51d0be1.chunk.js.map",
     "runtime-main.js": "/ecoeco/static/js/runtime-main.50dd6f09.js",
     "runtime-main.js.map": "/ecoeco/static/js/runtime-main.50dd6f09.js.map",
     "static/css/2.2b927c2f.chunk.css": "/ecoeco/static/css/2.2b927c2f.chunk.css",
@@ -30,7 +30,7 @@
     "static/media/kabachok.fcc34d5a.jpg": "/ecoeco/static/media/kabachok.fcc34d5a.jpg",
     "static/media/lamber.d1d99fec.jpg": "/ecoeco/static/media/lamber.d1d99fec.jpg",
     "static/media/list.93d98724.svg": "/ecoeco/static/media/list.93d98724.svg",
-    "static/media/logo.ea7551e1.png": "/ecoeco/static/media/logo.ea7551e1.png",
+    "static/media/logo.47d45445.png": "/ecoeco/static/media/logo.47d45445.png",
     "static/media/milk.77492dde.jpg": "/ecoeco/static/media/milk.77492dde.jpg",
     "static/media/ogurec.b89e6d07.jpg": "/ecoeco/static/media/ogurec.b89e6d07.jpg",
     "static/media/pencil.feaacd34.svg": "/ecoeco/static/media/pencil.feaacd34.svg",
@@ -56,6 +56,6 @@
     "static/css/2.2b927c2f.chunk.css",
     "static/js/2.49fa8ef2.chunk.js",
     "static/css/main.340c3822.chunk.css",
-    "static/js/main.7d8c585f.chunk.js"
+    "static/js/main.c51d0be1.chunk.js"
   ]
 }
