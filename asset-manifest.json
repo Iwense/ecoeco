@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/ecoeco/static/css/main.340c3822.chunk.css",
-    "main.js": "/ecoeco/static/js/main.0aa6f173.chunk.js",
-    "main.js.map": "/ecoeco/static/js/main.0aa6f173.chunk.js.map",
+    "main.js": "/ecoeco/static/js/main.2ae3b32f.chunk.js",
+    "main.js.map": "/ecoeco/static/js/main.2ae3b32f.chunk.js.map",
     "runtime-main.js": "/ecoeco/static/js/runtime-main.50dd6f09.js",
     "runtime-main.js.map": "/ecoeco/static/js/runtime-main.50dd6f09.js.map",
     "static/css/2.2b927c2f.chunk.css": "/ecoeco/static/css/2.2b927c2f.chunk.css",
@@ -56,6 +56,6 @@
     "static/css/2.2b927c2f.chunk.css",
     "static/js/2.49fa8ef2.chunk.js",
     "static/css/main.340c3822.chunk.css",
-    "static/js/main.0aa6f173.chunk.js"
+    "static/js/main.2ae3b32f.chunk.js"
   ]
 }
