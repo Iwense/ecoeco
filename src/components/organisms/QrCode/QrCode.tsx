@@ -20,14 +20,6 @@ const QrCode: React.FC = () => {
     const [price, setPrice] = useState("");
     const [error, setError] = useState<string>("");
 
-    const [checker, setChecker] = useState(false);
-
-    useEffect(() => {
-        const timer = setTimeout(() => {
-            setChecker(true);
-        }, 3000);
-    }, []);
-
     const callApi = (qrCodeString: string) => {
         if (!qrCodeString) return;
 
@@ -58,13 +50,13 @@ const QrCode: React.FC = () => {
         };
     };
 
-    useEffect(() => {
-        if (!result) return;
-        callApi(result);
-    }, [result]);
+    // useEffect(() => {
+    //     if (!result) return;
+    //     callApi(result);
+    // }, [result]);
 
     const handleError = (err: string) => {
-        // setError(err.toString());
+        setError(err.toString());
         console.log("Error with scan ", err);
     };
 
@@ -80,14 +72,16 @@ const QrCode: React.FC = () => {
     }, [invoice]);
 
     const handleScan = (data: string | null) => {
-        // if (data) {
-        //     setResult(data);
-        //     setError("");
-        // }
+        if (data) {
+            callApi(data);
+            setResult(data);
+            setError("");
+        }
     };
 
     const handleAddInvoiceClick = () => {
-        dispatch.invoiceList.addQrCode(invoice);
+        // dispatch.invoiceList.addQrCode(invoice);
+        dispatch.invoiceList.addNewInvoice(invoice);
         history.push("/list");
     };
 
@@ -110,14 +104,14 @@ const QrCode: React.FC = () => {
                     <Typography className={classes.text}>{error}</Typography>
                 )}
 
-                {checker && (
+                {!!invoice?.items.length && (
                     <Box className={classes.content}>
                         <Box>
                             <Typography className={classes.text}>
-                                {`Чек на сумму : 1105₽`}
+                                {`Чек на сумму : ${price}`}
                             </Typography>
                             <Typography className={classes.text}>
-                                {"17.05.2021"} , {"18:23"}
+                                {date} , {time}
                             </Typography>
                         </Box>
 
@@ -130,6 +124,7 @@ const QrCode: React.FC = () => {
                     </Box>
                 )}
             </Box>
+
             {/* <Button
                 typeBtn='white'
                 value='Проверка АПИ'
